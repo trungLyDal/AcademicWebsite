@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <title>IntegrityXplorer.com</title>
+</head>
+<body>
+    <!-- Your content goes here -->
+    <h1>Adventure to Integrity Land</h1>
+
+    
+    <div class = "container" id = "page1">
+        <h3>Backstory:</h3>
+    <p>
+        Meet <b>John Doe</b>, a former nobleman turned scholar in the <b>war-torn</b> kingdom of <u>Dalhousie Land</u>. Amidst the chaos of relentless warfare, John emerged as a beacon of hope. He was driven by a singular mission: to restore the academic integrity that had been lost in his kingdom. Dalhousie Land, once known for its scholars and philosophers, had fallen into a state of decay, both physically and intellectually.
+    </p>
+    <p>
+        John's journey was born out of witnessing the ruinous consequences of ambition and corruption of knowledge for personal gain. As the kingdom crumbled, he vowed to reunite his people through the pursuit of truth and wisdom, believing that true academic integrity held the key to healing his broken land.
+    </p>
+
+    
+    
+    <p>Your friend Thomas approach you and ask to teach him magic, when you asked if he is gonna provide citations for the wizard council.</p>
+    <p><b>He said no because you guys are friends, what do you do?</b></p>
+    <label><input type="radio" name="q1" value="Correct"> Paris</label>
+    <label><input type="radio" name="q1" value="Wrong"> London</label>
+    <label><input type="radio" name="q1" value="Wrong"> Berlin</label>
+</div>
+
+    <!-- Add more questions and answer choices here -->
+    <div class="container" id="page2" style="display: none;">
+        <!-- Question 2 -->
+        <p>Another question here... 1 </p>
+        <label><input type="radio" name="q2" value="Wrong"> London</label>
+        <label><input type="radio" name="q2" value="Wrong"> Berlin</label>
+        <label><input type="radio" name="q2" value="Correct"> Paris</label>
+        <!-- Add question and answer choices for page 2 here -->
+    </div>
+    <div class="container" id="page3" style="display: none;">
+        <!-- Question 2 -->
+        <p>Another question here... 2 </p>
+        <label><input type="radio" name="q3" value="Wrong"> London</label>
+        <label><input type="radio" name="q3" value="Correct"> Paris</label>
+        <label><input type="radio" name="q3" value="Wrong"> Berlin</label>
+ 
+    </div>
+    <div class="container" id="page4" style="display: none;">
+        <!-- Question 2 -->
+        <p>Another question here... 3</p>
+        <label><input type="radio" name="q4" value="Correct"> Paris</label>
+        <label><input type="radio" name="q4" value="Wrong"> London</label>
+        <label><input type="radio" name="q4" value="Wrong"> Berlin</label>
+        
+    </div>
+
+    <div id="score">Score: 0</div>
+
+    <button onclick="calculateScore()">Next</button>
+
+    <script src="functions.js"></script>
+</body>
+</html>
