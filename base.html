@@ -23,40 +23,51 @@
     
     <p>Your friend Thomas approach you and ask to teach him magic, when you asked if he is gonna provide citations for the wizard council.</p>
     <p><b>He said no because you guys are friends, what do you do?</b></p>
-    <label><input type="radio" name="q1" value="Correct"> Paris</label>
-    <label><input type="radio" name="q1" value="Wrong"> London</label>
-    <label><input type="radio" name="q1" value="Wrong"> Berlin</label>
+    <label><input type="radio" name="q1" value="Correct">Refuse to teach him until he agrees to provide citations.</label>
+    <label><input type="radio" name="q1" value="Wrong">Teach him some basic spells without requiring citations.</label>
+    <label><input type="radio" name="q1" value="Wrong">Agree to teach him magic without requiring citations.</label>
 </div>
 
     <!-- Add more questions and answer choices here -->
     <div class="container" id="page2" style="display: none;">
-        <!-- Question 2 -->
-        <p>Another question here... 1 </p>
-        <label><input type="radio" name="q2" value="Wrong"> London</label>
-        <label><input type="radio" name="q2" value="Wrong"> Berlin</label>
-        <label><input type="radio" name="q2" value="Correct"> Paris</label>
-        <!-- Add question and answer choices for page 2 here -->
+        <p>1. **<b>Scenario 1:</b>The Stolen Ancient Scroll**<br>
+            *<b>Location:</b> A hidden chamber in a war-torn Dalhousie Land* <br>
+          
+            While exploring an old, war-damaged building in search of ancient scrolls, John stumbles upon a fellow scholar trying to steal a precious, ancient scroll. The scholar is driven by greed, intending to sell the artifact for personal gain.
+         </p>
+        <label><input type="radio" name="q2" value="Wrong">  Help the scholar steal the scroll for personal gain.</label>
+        <label><input type="radio" name="q2" value="Wrong"> Allow the scholar to take the scroll, but report the incident to the authorities.</label>
+        <label><input type="radio" name="q2" value="Correct"> Confront the scholar and try to stop the theft</label>
     </div>
+
     <div class="container" id="page3" style="display: none;">
-        <!-- Question 2 -->
-        <p>Another question here... 2 </p>
-        <label><input type="radio" name="q3" value="Wrong"> London</label>
-        <label><input type="radio" name="q3" value="Correct"> Paris</label>
-        <label><input type="radio" name="q3" value="Wrong"> Berlin</label>
+        <p>. **<b>Scenario 2:</b> Manipulating Historical Records** <br>
+            *<b>Location:</b> The Royal Archives of Dalhousie Land* <br>
+          
+            John discovers that a group of historians, influenced by political powers, has been altering historical records to glorify certain leaders and justify ongoing conflicts. They are doing this to serve the interests of the current ruling faction, contributing to the kingdom's intellectual decay.
+          </p>
+        <label><input type="radio" name="q3" value="Wrong"> Join the historians in altering records to protect your safety.</label>
+        <label><input type="radio" name="q3" value="Correct">  Confront the historians and expose their actions.</label>
+        <label><input type="radio" name="q3" value="Wrong"> Ignore the situation and continue your research.</label>
  
     </div>
+
     <div class="container" id="page4" style="display: none;">
-        <!-- Question 2 -->
-        <p>Another question here... 3</p>
-        <label><input type="radio" name="q4" value="Correct"> Paris</label>
-        <label><input type="radio" name="q4" value="Wrong"> London</label>
-        <label><input type="radio" name="q4" value="Wrong"> Berlin</label>
+        <p>3. **<b>Scenario 3:</b> Misleading Academic Competition**<br>
+            *<b>Location:</b> The Great Debate at the Royal University*<br>
+          
+            At the annual Great Debate event, John witnesses a brilliant student spreading misinformation to win the competition. The student believes that winning at any cost is more important than upholding the integrity of academic discussions.
+         </p>
+        <label><input type="radio" name="q4" value="Correct"> Challenge the student and present correct information.</label>
+        <label><input type="radio" name="q4" value="Wrong"> Support the student to ensure they win the competition.</label>
+        <label><input type="radio" name="q4" value="Wrong"> Stay silent and let the student win.</label>
         
     </div>
 
     <div id="score">Score: 0</div>
 
     <button onclick="calculateScore()">Next</button>
+    <button id = "retryButton" onclick="retryQuiz()" style ="display: none;" >Retry</button>
 
     <script src="functions.js"></script>
 </body>

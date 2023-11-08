@@ -29,6 +29,7 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    margin-bottom: 20px
 
 }
 
@@ -49,4 +50,9 @@ p {
 
 h3{
     text-align: center;
+}
+#retryButton{
+    margin: 0 auto;
+    background-color: red;
+    
 }
